@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:jsf="http://xmlns.jcp.org/jsf/jsf" lang="pt-br">
+<h:head>
+<meta charset="utf-8"/>
+<title>Gustavo agendamento</title>
+<h:outputStylesheet library="css" name="style.css"/>
+
+
+<link rel="shortcut icon" href=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</h:head>
+
+<body>
+    
+	<ui:include src="cabecalho.xhtml"/> 
+    <div class="conteudo">	
+        <div class="menu">	
+		<ul>
+			<span class="ttp">Painel de controle</span>
+			<li><a href="home.xhtml">home</a></li>
+			<li><a href="pacientes.xhtml">Paciente</a></li>
+			<li><a href="medicos.xhtml">Médicos</a></li>
+			<li><a href="especialidades.xhtml">Especialidades</a></li>
+			<li><a href="medico_especialidade.xhtml">Médico Especialidades</a></li>
+              <span class="ttp">agendamento</span>
+			                       
+			<li><a href="agenda.xhtml">Agendas do Médico</a></li>	
+            <li><a href=""> <i class="icone ico5"></i><span>SAIR</span></a></li>
+		</ul>
+	</div>
+        
+        
+<div class="base-home">
+	<ui:insert name="conteudo"></ui:insert>
+</div>
+       </div>
+</body>
+</html>

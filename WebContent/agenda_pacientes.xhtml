@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:jsf="http://xmlns.jcp.org/jsf/jsf" lang="pt-br">
+<ui:composition template="template.xhtml">
+	<ui:define name="conteudo">
+	<div class="base-listas">
+		<span class="titulo1"><a name="consulta"></a>Ver clientes</span>
+		<div class="caixa">
+		 <div class="colunas">
+             <div class="col col6"> <span>Médico:</span> <b>Suzy</b>      </div>
+             <div class="col col2"> <span>Data:  </span> <b>03/01/2020  </b>    </div>
+             <div class="col col2"> <span>Turno: </span> <b>matutino</b>       </div>
+		</div>		
+		<div class="colunas">
+             <div class="col col2"> <span>Limite:     </span> <b>30  </b>   </div>
+             <div class="col col2"> <span>Inscritos:  </span> <b>0  </b>     </div>
+             <div class="col col2"> <span>Confirmados:</span> <b>0   </b>     </div>
+             <div class="col col2"> <span>Disponível: </span> <b>30</b>  </div>
+           </div>		 
+		</div>
+		
+		<div class="caixa">
+		 <span class="tt2">Lista de pacientes</span>
+			<table width="100%" cellpadding="0" cellspacing="0" class="tabela">			
+
+            <thead>
+            <tr>
+                    
+                    <th width="5%" align="center">ID:</th>
+                    <th width="30%" align="center">Data</th>
+                    <th width="60%" align="center">Nome:</th>
+                    <th width="10%" align="center">confirmado:</th>
+                    <th colspan="2" align="center">Opção</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center">1</td>
+                    <td align="center">10/10/2010  </td>
+                    <td align="center">Geraldo da Silva</td>
+					<td align="center"><a href="" class="editar but">Confirmar</a></td>					
+					<td align="center"><a href="" class="editar but">Atender</a></td>					
+                </tr>    	
+
+
+            </tbody>
+     </table>
+		</div>
+		
+	</div>
+</ui:define>
+	</ui:composition>
+	
+	</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:jsf="http://xmlns.jcp.org/jsf/jsf" lang="pt-br">
+<ui:composition template="template.xhtml">
+<ui:define name="conteudo">
+<div class="base-listas">
+			<span class="titulo1"><a name="consulta"></a>Lista de Especialidade</span>
+			<!-- mensagens-->
+			<p class="msg erro">Não foi possível realizar o seu cadastro</p>
+			<p class="msg sucesso">Seu cadastro foi realizado com sucesso</p>
+			
+			<div class="caixa">
+            <h:form id="frmMedicoEspecialidade" >
+                <table border="0" cellspacing="0">
+                    <tbody>
+                        <tr>                            
+                            <th >
+	                            <label class="col-min">
+									<span>Especialidades</span>
+									<select  id="idEspecialidade" size="0"> 
+										<option>Cardiologista</option>
+									</select>
+								</label>		
+			                          
+                            </th>
+                             <th >
+	                            <label class="col-min">
+									<span>Médicos</span>
+									<select  id="medico" size="0"> 
+										<option>Gustavo Gomes </option>
+									</select>
+								</label> 
+			                          
+                            </th>
+                    <th><input type="submit" name="Submit" value="Inserir" class="but"/></th>                    
+                    
+                    </tr>
+                    </tbody>
+                </table>
+            </h:form>
+        </div>
+
+			<div class="caixa">
+				<table width="100%" cellpadding="0" cellspacing="0" class="tabela">
+
+					<thead>
+						<tr>
+							<th align="left">Especialidade:</th>
+							<th align="left">Médico:</th>
+							<th colspan="2" align="Center">Opções:</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr>
+							<td>Cardiologista</td>	
+							<td>Manoel Jailton</td>				
+		    			
+							
+							<td align="center"><a href="frm_cliente.html"	class="editar but">Editar</a></td>
+							<td align="center"><a href="frm_cliente.html"	class="excluir but">Excluir</a></td>
+							 
+							
+						</tr>
+						
+						
+
+					</tbody>
+
+				</table>
+
+			</div>
+		</div>
+</ui:define>
+	</ui:composition>
+	
+	</html>

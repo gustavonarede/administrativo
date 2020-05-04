@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:jsf="http://xmlns.jcp.org/jsf/jsf" lang="pt-br">
+
+<ui:composition template="template.xhtml">
+	<ui:define name="conteudo">
+		<div class="base-listas">
+		<span class="titulo1"><a name="consulta"></a>Cadastro de cliente</span>
+			<!-- mensagens-->
+			<p class="msg erro">Não foi possível realizar o seu cadastro</p>
+			<p class="msg sucesso">Seu cadastro foi realizado com sucesso</p>
+		<div class="caixa">
+		
+			<div class="base-form">	
+			
+			<form action="op/op_cliente.php" method="post">
+			<span class="ttf">dados pessoais</span>	
+			<label>
+				<span>Nome</span>
+				<input type="text" name="txt_nome" value=""/>
+			</label>
+			
+			<label>
+				<span>Endereço</span>
+				<input type="text" name="txt_endereco" value=""/>
+			</label>
+                        <label class="esquerdo">
+				<span>Bairro</span>
+				<input type="text" name="txt_bairro" value=""/>
+			</label>
+                        <label class="direito">
+				<span>Cidade</span>
+				<input type="text" name="txt_cidade" value=""/>
+			</label>
+                
+                
+			<label class="col-min">
+				<span>Estado</span>
+				<select name="estado"> 
+					<option value="estado">Selecione o Estado</option> 
+					<option value="ac">AC</option> 
+					<option value="al">AL</option> 
+					<option value="am">AM</option> 
+					<option value="ap">AP</option> 
+					<option value="ba">BA</option> 
+					<option value="ce">CE</option> 
+					<option value="df">DF</option> 
+					<option value="es">ES</option> 
+					<option value="go">GO</option> 
+					<option value="ma">MA</option> 
+					<option value="mt">MT</option> 
+					<option value="ms">MS</option> 
+					<option value="mg">MG</option> 
+					<option value="pa">PA</option> 
+					<option value="pb">PB</option> 
+					<option value="pr">PR</option> 
+					<option value="pe">PE</option> 
+					<option value="pi">PI</option> 
+					<option value="rj">RJ</option> 
+					<option value="rn">RN</option> 
+					<option value="ro">RO</option> 
+					<option value="rs">RS</option> 
+					<option value="rr">RR</option> 
+					<option value="sc">SC</option> 
+					<option value="se">SE</option> 
+					<option value="sp">SP</option> 
+					<option value="to">TO</option> 
+				</select>
+			</label>                
+			
+			
+			<label class="col2">
+				<span>CEP</span>
+				<input type="text" name="txt_cep" value=""/>
+			</label>
+                        
+            <label class="col2">
+				<span>CPF</span>
+				<input type="text" name="txt_cpf" value=""/>
+			</label>
+			
+           <label class="direito">
+				<span>RG</span>
+				<input type="text" name="txt_rg" value=""/>
+			</label>
+                
+			<label class="esquerdo">
+				<span>Celular</span>
+				<input type="text" name="txt_celular" value=""/>
+			</label>
+			
+			<div class="limpar"></div>
+			
+			<span class="ttf">dados de acesso</span>
+			<label>
+				<span>Email</span>
+				<input type="text" name="txt_email" value="mjailton"/>
+			</label>
+			<label class="esquerdo">
+				<span>Login</span>
+				<input type="text" name="txt_login" value="mjailton"/>
+			</label>
+			<label class="direito">
+				<span>Senha</span>
+				<input type="text" name="txt_senha" value="123"/>
+			</label>	
+			<div class="limpar"></div>
+			
+                <input type="submit" name="logar" id="logar" value="cadastrar" class="but"/>
+			
+                        
+                        
+		</form>
+		</div>
+		</div>
+	</div>
+	</ui:define>
+	</ui:composition>
+</html>

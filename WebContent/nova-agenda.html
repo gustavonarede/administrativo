@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mjailton agendamento</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="shortcut icon" href=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    
+    <div class="base-topo">
+	<div class="conteudo">
+		<a href="index.php?link=1"><img src="img/logo.png"  class="logo">
+		<div class="usuario">
+			<a href="" >Manoel jailton sousa</a>
+			<div class="thumb"><img src="img/img-user.png"></div>		
+		</div>
+	</div>
+</div> 
+    <div class="conteudo">	
+        <div class="menu">	
+		<ul>
+			<span class="ttp">Painel de controle</span>
+			<li><a href="index.html">home</span></a></li>
+			<li><a href="lista_cliente.html">Paciente</a></li>
+			<li><a href="lista_medico.html">Médicos</a></li>
+			<li><a href="lista_especialidade.html">Especialidades</a></li>
+              <span class="ttp">agendamento</span>
+			                       
+			<li><a href="agenda.html">Agendas do Médico</a></li>	
+            <li><a href=""> <i class="icone ico5"></i><span>SAIR</span></a></li>
+		</ul>
+	</div>
+        
+        <div class="base-home">
+    <div class="base-listas">
+        <span class="titulo1"><a name="consulta"></a>Cadastro de Agenda</span>
+        <div class="caixa">
+            <div class="base-form">
+                <form action="http://mjailton.com.br/projeto_mjailton/phpprime/agendamento/admin/agenda/agendar" method="post">
+                    <div>
+						<label class="col6">
+							<span>Nome Médico</span>
+							<select name="id_medico"> 
+								<option value="0">Selecione o Medico</option> 
+								<option value ='1' >Suzy</option><option value ='3' >Joana Vieira</option><option value ='4' >Benjamin</option><option value ='7' >Helena Regina</option>							</select>
+						</label>                
+						<label class="col6">
+							<span>Turno</span>
+							<select name="turno"> 
+								<option value="0">Selecione o Turno</option> 
+								<option value="matutino">Matutino</option> 
+								<option value="vespertino">Vespertino</option> 
+								<option value="noturno">Noturno</option> 
+							</select>
+						</label> 
+					</div>
+					<div>
+						<label class="col6">
+							<span>Data</span>
+							<input type="date" name="data" value="2020-01-03">
+						</label> 
+
+						<label class="col6">
+							<span>Limite Pacientes</span>
+							<input type="text" name="limite" value="30">
+						</label>
+					</div>
+
+                   <div class="col6 center"><input type="submit" name="logar" id="logar" value="cadastrar" class="but"></div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>      </div>
+</body>
+</html>
